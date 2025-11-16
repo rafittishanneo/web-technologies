@@ -1,0 +1,40 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+section {
+    padding: 50px 20px;
+    margin: 0;
+}
+
+#about-me {
+    background-color: #f9d423;
+}
+
+#education {
+    background-color: #e07a5f;
+    color: #fff;
+}
+
+#hobbies {
+    background-color: #43aa8b;
+    color: #fff;
+}
+
+.section-title {
+    font-size: 2em;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+}
+
+.section-content {
+    font-size: 1.1em;
+    max-width: 700px;
+}
+
+/* Add spacing between sections */
+#education, #hobbies {
+    border-top: 10px solid #fff;
+}
