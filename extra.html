@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Absolute Position Example</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 36px;
+      /* 10px grid background */
+      background:
+        linear-gradient(90deg, #e0e0e0 1px, transparent 1px),
+        linear-gradient(180deg, #e0e0e0 1px, transparent 1px);
+      background-size: 10px 10px;
+    }
+    h1 {
+      margin-bottom: 18px;
+    }
+    .container {
+      position: relative;
+      width: 300px;  /* 30 grid squares */
+      height: 200px; /* 20 grid squares */
+      border: 2px solid #333;
+      background: rgba(255,255,255,0.6);
+    }
+    .container-label {
+      position: absolute;
+      left: 50%;
+      top: 45%;
+      transform: translate(-50%, -50%);
+      font-size: 2em;
+      font-weight: bold;
+    }
+    .bottom-right-box {
+      position: absolute;
+      width: 90px;    /* 9 grid squares */
+      height: 50px;   /* 5 grid squares */
+      right: 10px;    /* 1 grid square */
+      bottom: 10px;   /* 1 grid square */
+      border: 2px solid #333;
+      background: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1em;
+      font-weight: 500;
+      text-align: center;
+    }
+    .dimensions {
+      margin-top: 24px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Absolute Position Example</h1>
+  <div class="container">
+    <span class="container-label">Container Area</span>
+    <div class="bottom-right-box">
+      Bottom<br>Right
+    </div>
+  </div>
+</body>
+</html>

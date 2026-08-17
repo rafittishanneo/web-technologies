@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registration Form</title>
+
+  <!-- Link to external CSS file -->
+  <link rel="stylesheet" href="secondtask.css">
+</head>
+
+<body>
+  <form action="/register" method="POST">
+    <h2>Registration Form</h2>
+
+    <label for="fullname">Full Name:</label>
+    <input type="text" id="fullname" name="fullname" required>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" required>
+
+    <label for="confirm-password">Confirm Password:</label>
+    <input type="password" id="confirm-password" name="confirm-password" required>
+
+    <label>Gender:</label>
+    <div class="gender-group">
+      <input type="radio" id="male" name="gender" value="Male" required>
+      <label for="male">Male</label>
+      <input type="radio" id="female" name="gender" value="Female" required>
+      <label for="female">Female</label>
+    </div>
+
+    <label for="dob">Date of Birth:</label>
+    <input type="date" id="dob" name="dob" required>
+
+    <label for="country">Country:</label>
+    <select id="country" name="country" required>
+      <option value="Bangladesh">Bangladesh</option>
+      <option value="USA">USA</option>
+      <option value="India">India</option>
+      <option value="UK">UK</option>
+    </select>
+
+    <label class="terms">
+      <input type="checkbox" id="terms" name="terms" required>
+      I agree to the terms and conditions.
+    </label>
+
+    <button type="submit">Register</button>
+  </form>
+</body>
+</html>
